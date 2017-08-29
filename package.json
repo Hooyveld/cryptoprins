@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "ngstart": "ng serve",
+    "ngstart": "ng serve --sourcemap --extractCss",
     "build": "ng build",
     "ngtest": "ng test",
     "nglint": "ng lint",
@@ -14,8 +14,9 @@
     "lint":         "tslint \"src/**/*.ts\"",
     "pree2e":       "webdriver-manager update",
     "e2e":          "protractor",
+    "heroku":        "git push heroku master",
     "preinstall":   "npm install -g http-server",
-    "postinstall":  "ng build --aot -prod"
+    "postinstall":  "ng build && mv dist/* ."
   },
   "private": true,
   "dependencies": {
@@ -52,5 +53,7 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.3.2",
     "typescript": "~2.3.3"
+  },
+  "devDependencies": {
   }
 }
