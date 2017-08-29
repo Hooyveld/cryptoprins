@@ -1,0 +1,23 @@
+//
+// Color system
+//
+
+$white:         #ffffff;
+$blue:          #2f4361;
+$yellow:        #FAB514;
+$bg-blue:       #2C3651;
+$txt-blue:      #24344b;
+$txt-gray:      #989898;
+$bg-gray:       #F6F6F6;
+$bg-gray2:      #e6e6e6;
+
+
+.bg-blue {
+    background-color: $bg-blue;
+    color: #fff;
+}
+
+.bg-gray {
+  background-color: #F6F6F6;
+  color: #000;
+}

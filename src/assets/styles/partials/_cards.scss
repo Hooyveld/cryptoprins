@@ -1,0 +1,29 @@
+.card-deck--pricing {
+  justify-content: center;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.card--pricing {
+  margin:1rem 0;
+  .card-header {
+    height: 8rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-footer {
+    background-color: transparent
+  }
+  flex: 0 1 290px!important;
+  //min-width: 290px;
+  //max-width: 290px;
+}
+
+.card-usps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

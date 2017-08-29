@@ -1,0 +1,13 @@
+.btn {
+    font-size: 1.1rem;
+  }
+
+.btn-primary {
+  //@include button-variant($yellow, $yellow);
+  color: $white;
+}
+
+.btn-secondary {
+  //@include button-variant($btn-blue, $btn-blue);
+  color: $white;
+}
