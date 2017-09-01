@@ -1,0 +1,29 @@
+<main role="main">
+  <section class="sizing--section bg-white">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-12 col-md-9">
+          <h2>
+            FAQ - Frequently asked questions
+          </h2>
+          <p>
+            Quickly find solutions to commonly asked questions
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-9">
+          <div *ngFor="let faq of faqs">
+            <h5>
+              {{faq.title}}
+            </h5>
+            <p>
+              {{faq.description}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>

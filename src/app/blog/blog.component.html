@@ -1,0 +1,34 @@
+
+<main role="main">
+
+  <section class="sizing--section bg-white">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-12">
+          <h2>
+            Blog
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+
+          <div class="card-deck card-deck--blog">
+            <div class="card card--blog" *ngFor="let blog of blogs">
+              <div class="card-header">
+                {{ blog.fields.title }}
+              </div>
+              <div class="card-body">
+                {{ blog.fields.author[0].fields.name }}
+              </div>
+              <div class="card-footer">
+                <a routerLink="./{{blog.fields.slug}}" class="btn btn-primary btn-block">Goto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>

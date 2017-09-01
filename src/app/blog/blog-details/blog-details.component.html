@@ -1,0 +1,21 @@
+<main role="main">
+
+  <section class="sizing--section bg-white">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-12">
+          <h2>
+            {{ blog.fields.title }}
+          </h2>
+          <h3>
+            {{ blog.fields.author[0].fields.name }}
+          </h3>
+          <p>
+            {{ blog.fields.body }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
