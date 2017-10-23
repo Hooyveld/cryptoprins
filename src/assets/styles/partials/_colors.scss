@@ -2,22 +2,56 @@
 // Color system
 //
 
-$white:         #ffffff;
-$blue:          #2f4361;
-$yellow:        #FAB514;
-$bg-blue:       #2C3651;
-$txt-blue:      #24344b;
-$txt-gray:      #989898;
-$bg-gray:       #F6F6F6;
-$bg-gray2:      #e6e6e6;
-
+$orangey-yellow:  #fab514;
+$warm-grey:       #989898;
+$dark-blue-grey:  #24344b;
+$algae-green:     #27c357;
+$bluish:          #328cd5;
+$greyish:         #b7b7b7;
+$slate:           #4f6272;
+$white-two:       #f7f7f7;
+$white:           #fff;
+$dark-grey-blue:  #2f4361;
+$pinkish-red:     #f11a34;
+$green-blue:      #00cd88;
+$cool-grey:       #b3bac1;
+$silver:          #ccd0d4;
+$charcoal-grey:   #2f3640;
+$pale-grey:       #edf0f4;
 
 .bg-blue {
-    background-color: $bg-blue;
+    background-color: $dark-blue-grey;
     color: #fff;
 }
 
+.bg-white {
+    background-color: $white;
+    color: #000;
+}
+
 .bg-gray {
-  background-color: #F6F6F6;
+  background-color: $greyish;
   color: #000;
+}
+
+.bg-blue--gradient {
+  //background-image: linear-gradient(247deg, #ececec, var($white-two));
+
+  background-image: linear-gradient(
+    133deg,
+    #2b3653,
+    #2b3653 25%,
+    #1f2639 25%,
+    #1f2639 50%,
+    #2b3653 50%,
+    #2b3653 75%,
+    #1f2639 75%);
+
+    color: $white;
+}
+
+
+.bg-white--gradient {
+  background-image: linear-gradient(to top, #f7f7f7, #ebebeb);
+	background-image: linear-gradient(to top, var($white-two), #ebebeb);
 }

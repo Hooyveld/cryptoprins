@@ -1,7 +1,9 @@
 .navbar-dark {
   .nav-link {
     position: relative;
-    font-size: 1.1rem;
+    font-size: 0.875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     &:after {
       content:"";
       position: absolute;
@@ -11,14 +13,20 @@
       height:2px;
     }
     &:hover {
-      color: $yellow;
+      color: $green-blue;
       &:after {
-        background-color: $yellow;
+        background-color: $green-blue;
       }
     }
   }
   .navbar-brand {
     color: $white;
+  }
+  @include media-breakpoint-up(lg) {
+    .nav-link {
+      padding-left: 0.75rem!important;
+      padding-right: 0.75rem!important;
+    }
   }
 }
 

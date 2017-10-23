@@ -1,0 +1,47 @@
+.card-deck--usps {
+  width:auto;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  @media (min-width: 850px) {
+  }
+}
+
+.card--usps {
+  width: 200px;
+  margin: 1rem;
+  //min-width: 50%;
+  //flex: 1 0 200px;
+  border: 0;
+  .card-img {
+    max-width: 80px;
+  }
+  .card-title {
+    font-weight: bold;
+  }
+  .card-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.list--usps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  .item-title {
+    margin: 0;
+  }
+  .item {
+    position: relative;
+    margin: 0 0 50px 0;
+    padding: 0 0 0 80px;
+  }
+  .item-img {
+    position: absolute;
+    max-width: 52px;
+    left: 0;
+    top: 0;
+  }
+}
