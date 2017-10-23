@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="col-12 col-lg-4">
-        <img class="header-img" src="/assets/images/devices/macbook-dashboard.png" alt="Link">
+        <img class="header-img" src="/assets/images/devices/macbook-dashboard.png" alt="macbook">
       </div>
     </div>
   </div>
@@ -27,7 +27,7 @@
   <section class="sizing--section bg-white">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12 col-sm-9 text-center">
+        <div class="col-12 col-md-9 text-center">
           <div class="section__header">
             <h2>
               How it works
@@ -41,39 +41,14 @@
       <div class="row">
         <div class="col-12">
           <div class="card-deck--usps">
-            <div class="card card--usps">
-              <img class="card-img card-img-top" src="/assets/images/usps/analytics.svg" alt="Link">
+            <div class="card card--usps" *ngFor="let cardUsp of cardUsps">
+              <img class="card-img card-img-top" src="{{cardUsp.icon}}" alt="{{cardUsp.title}}">
               <div class="card-body">
-                <h5 class="card-title">link</h5>
+                <h5 class="card-title">
+                  {{cardUsp.title}}
+                </h5>
                 <p class="card-text">
-                  Link CryptoPrins to your exchange.
-                </p>
-              </div>
-            </div>
-            <div class="card card--usps">
-              <img class="card-img card-img-top" src="/assets/images/usps/analytics.svg" alt="Link">
-              <div class="card-body">
-                <h5 class="card-title">link</h5>
-                <p class="card-text">
-                  Link CryptoPrins to your exchange.
-                </p>
-              </div>
-            </div>
-            <div class="card card--usps">
-              <img class="card-img card-img-top" src="/assets/images/usps/analytics.svg" alt="Link">
-              <div class="card-body">
-                <h5 class="card-title">link</h5>
-                <p class="card-text">
-                  Link CryptoPrins to your exchange.
-                </p>
-              </div>
-            </div>
-            <div class="card card--usps">
-              <img class="card-img card-img-top" src="/assets/images/usps/analytics.svg" alt="Link">
-              <div class="card-body">
-                <h5 class="card-title">link</h5>
-                <p class="card-text">
-                  Link CryptoPrins to your exchange.
+                  {{cardUsp.description}}
                 </p>
               </div>
             </div>
@@ -86,7 +61,7 @@
   <section class="sizing--section bg-white--gradient">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12 col-sm-9 text-center">
+        <div class="col-12 col-md-9 text-center">
           <div class="section__header">
             <h2>
               Easy to use, everywhere
@@ -100,58 +75,33 @@
       <div class="row">
         <div class="col-12 col-md-6 col-lg-4 order-lg-1">
           <ul class="list--usps">
-            <li class="item">
-              <img class="item-img" src="/assets/images/usps/analytics.svg" alt="Link">
-              <h6 class="item-title">SECURE STORAGE</h6>
+            <li class="item" *ngFor="let listUsp of listUsps | slice:0:3">
+              <img class="item-img" src="{{listUsp.icon}}" alt="{{listUsp.title}}">
+              <h6 class="item-title">
+                {{listUsp.title}}
+              </h6>
               <p class="item-text">
-                You are keeping the controle over your own exchange and your information is always safely encrypted.
-              </p>
-            </li>
-            <li class="item">
-              <img class="item-img" src="/assets/images/usps/analytics.svg" alt="Link">
-              <h6 class="item-title">SECURE STORAGE</h6>
-              <p class="item-text">
-                You are keeping the controle over your own exchange and your information is always safely encrypted.
-              </p>
-            </li>
-            <li class="item">
-              <img class="item-img" src="/assets/images/usps/analytics.svg" alt="Link">
-              <h6 class="item-title">SECURE STORAGE</h6>
-              <p class="item-text">
-                You are keeping the controle over your own exchange and your information is always safely encrypted.
+                {{listUsp.description}}
               </p>
             </li>
           </ul>
         </div>
         <div class="col-12 col-md-6 col-lg-4 order-lg-3">
-
           <ul class="list--usps">
-            <li class="item">
-              <img class="item-img" src="/assets/images/usps/analytics.svg" alt="Link">
-              <h6 class="item-title">SECURE STORAGE</h6>
+            <li class="item" *ngFor="let listUsp of listUsps | slice:3:6">
+              <img class="item-img" src="{{listUsp.icon}}" alt="{{listUsp.title}}">
+              <h6 class="item-title">
+                {{listUsp.title}}
+              </h6>
               <p class="item-text">
-                You are keeping the controle over your own exchange and your information is always safely encrypted.
-              </p>
-            </li>
-            <li class="item">
-              <img class="item-img" src="/assets/images/usps/analytics.svg" alt="Link">
-              <h6 class="item-title">SECURE STORAGE</h6>
-              <p class="item-text">
-                You are keeping the controle over your own exchange and your information is always safely encrypted.
-              </p>
-            </li>
-            <li class="item">
-              <img class="item-img" src="/assets/images/usps/analytics.svg" alt="Link">
-              <h6 class="item-title">SECURE STORAGE</h6>
-              <p class="item-text">
-                You are keeping the controle over your own exchange and your information is always safely encrypted.
+                {{listUsp.description}}
               </p>
             </li>
           </ul>
         </div>
 
         <div class="col-12 col-md-12 col-lg-4 order-lg-2 text-center">
-          <img class="item-img mw-100" src="/assets/images/devices/i-phone-app.png" alt="Link">
+          <img class="item-img mw-100" src="/assets/images/devices/i-phone-app.png" alt="iPhone">
         </div>
 
       </div>
