@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
     {
       "icon": "/assets/images/usps/analytics.svg",
       "title": "link",
-      "description": "Link CryptoPrins to your exchange."
+      "description": "Link CryptoPrins to your exchanges."
     }
   ];
 
