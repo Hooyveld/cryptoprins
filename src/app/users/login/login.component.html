@@ -1,0 +1,53 @@
+<main role="main">
+
+  <section class="sizing--section bg-blue section--login">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+              <!-- form card login -->
+              <div class="card card--login">
+                <div class="card-header">
+                  <h3 class="mb-0">Login</h3>
+                </div>
+                <div class="card-body">
+                  <form class="form" role="form" autocomplete="off" id="formLogin" name="formLogin" (ngSubmit)="formLogin.form.valid && login()" #formLogin="ngForm" novalidate>
+                    <div class="form-group">
+                      <label for="username">Username</label>
+                      <input type="text" class="form-control form-control-lg" name="username" id="username" [(ngModel)]="model.username" #username="ngModel" required [ngClass]="{ 'is-invalid': formLogin.submitted && !username.valid }">
+                      <div class="invalid-feedback">
+                        Username is required
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label>Password</label>
+                      <input type="password" class="form-control form-control-lg" id="password" name="password" [(ngModel)]="model.password" #password="ngModel" required [ngClass]="{ 'is-invalid': !password.valid  && (password.dirty || password.touched) }">
+                      <div class="invalid-feedback">
+                        Password is required
+                      </div>
+                    </div>
+                    <div>
+                      <label class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input">
+                                      <span class="custom-control-indicator"></span>
+                                      <span class="custom-control-description">Remember me on this computer</span>
+                                    </label>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-lg float-right">Login</button>
+                  </form>
+                </div>
+                <!--/card-block-->
+              </div>
+              <!-- /form card login -->
+            </div>
+          </div>
+          <!--/row-->
+        </div>
+        <!--/col-->
+      </div>
+      <!--/row-->
+    </div>
+    <!--/container-->
+  </section>
+</main>

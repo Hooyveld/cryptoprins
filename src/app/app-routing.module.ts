@@ -11,6 +11,8 @@ import { AboutComponent } from './about/about.component';
 import { PlansAndPricingComponent } from './plansandpricing/plansandpricing.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogDetailsComponent } from './blog/blog-details/blog-details.component';
+import { LoginComponent } from './users/login/login.component';
+import { RegisterComponent } from './users/register/register.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,6 +23,7 @@ const appRoutes: Routes = [
   { path: 'plans-and-pricing', component: PlansAndPricingComponent },
   { path: 'blog', component: BlogComponent, children: [] },
   { path: 'blog/:slug', component: BlogDetailsComponent},
+  { path: 'login', component: LoginComponent, children: [] },
   { path: '404', component: NotfoundComponent },
   { path: '**', redirectTo: '/404' }
 ];

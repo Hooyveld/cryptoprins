@@ -4,8 +4,6 @@
   flex-direction:row;
   justify-content:space-around;
   flex-wrap: wrap;
-  @media (min-width: 850px) {
-  }
 }
 
 .card--usps {
@@ -15,7 +13,7 @@
   //flex: 1 0 200px;
   border: 0;
   .card-img {
-    max-width: 80px;
+    max-width: 4rem;
   }
   .card-title {
     font-weight: bold;
@@ -23,6 +21,15 @@
   .card-body {
     padding-left: 0;
     padding-right: 0;
+  }
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    .card-body {
+      padding-left: 1rem;
+      padding-top: 0;
+    }
   }
 }
 
@@ -35,8 +42,8 @@
   }
   .item {
     position: relative;
-    margin: 0 0 50px 0;
-    padding: 0 0 0 80px;
+    margin: 0 0 3rem 0;
+    padding: 0 0 0 5rem;
   }
   .item-img {
     position: absolute;

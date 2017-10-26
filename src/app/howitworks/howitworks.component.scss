@@ -1,0 +1,19 @@
+.section--how {
+  img {
+    width: 100%;
+    max-width: 160px;
+    margin-bottom: 2rem;
+  }
+  position: relative;
+  &:after {
+    content: "";
+    height:1px;
+    width: 60%;
+    margin:0 auto;
+    background-color: #ccd0d4;
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    margin-left: -30%;
+  }
+}

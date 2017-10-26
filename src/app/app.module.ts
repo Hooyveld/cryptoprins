@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { FormsModule }    from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -18,6 +19,9 @@ import { BlogComponent } from './blog/blog.component';
 import { BlogService } from './blog/blog.service';
 import { BlogDetailsComponent } from './blog/blog-details/blog-details.component';
 
+import { LoginComponent } from './users/login/login.component';
+import { RegisterComponent } from './users/register/register.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,13 +32,16 @@ import { BlogDetailsComponent } from './blog/blog-details/blog-details.component
     AboutComponent,
     PlansAndPricingComponent,
     BlogComponent,
-    BlogDetailsComponent
+    BlogDetailsComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    HttpModule
+    HttpModule,
+    FormsModule
   ],
   providers: [BlogService],
   bootstrap: [AppComponent]

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <path id="facebook-a" d="M21.3852784,34.9998503 L21.3852784,20.8592552 L26.1025729,20.8592552 L26.8088207,15.3484335 L21.3852784,15.3484335 L21.3852784,11.8299386 C21.3852784,10.2344604 21.8256604,9.14705627 24.0997276,9.14705627 L27,9.14570899 L27,4.21691198 C26.4981728,4.1499971 24.7766661,4 22.7738207,4 C18.5922747,4 15.7294942,6.56806417 15.7294942,11.2844401 L15.7294942,15.3485832 L11,15.3485832 L11,20.8594049 L15.7293455,20.8594049 L15.7293455,35 L21.3852784,34.9998503 Z"/>
+    <rect id="facebook-c" width="166" height="48" rx="5"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <mask id="facebook-b" fill="#fff">
+      <use xlink:href="#facebook-a"/>
+    </mask>
+    <use fill="#24344B" fill-rule="nonzero" xlink:href="#facebook-a"/>
+    <g mask="url(#facebook-b)">
+      <g transform="translate(-67 -9)">
+        <use fill="#2F4361" xlink:href="#facebook-c"/>
+      </g>
+    </g>
+  </g>
+</svg>
